@@ -7,7 +7,7 @@
 # Need total only for player
 
 # A for Rock, B for Paper, and C for Scissors
-# X for Rock, Y for Paper, and Z for Scissors
+# X means lose, Y means draw, and Z means you need to win
 
 total = 0
 
@@ -26,12 +26,20 @@ with open('test.txt', 'r') as file:
             # Draw
             if (line[0] == 'A'):
                 total += 3
+
+
+
+
         if (line[2] == 'Y'):
             total += 2
             if (line[0] == 'A'):
                 total += 6
             if (line[0] == 'B'):
                 total += 3
+
+
+
+
         if (line[2] == 'Z'):
             total += 3
             if (line[0] == 'B'):
